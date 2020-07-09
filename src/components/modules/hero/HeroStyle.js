@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const HeroStyle = styled.div`
     width: 100%;
     height: 100vh;
-    background-image: url(${props => props.img});
+    background: white;/*url(${props => props.img});*/
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: 75%;
@@ -51,6 +51,8 @@ export const HeroStyle = styled.div`
                 border: none;
                 border-radius: 2px;
                 margin: auto 5px;
+                outline: none;
+                cursor: pointer;
             }
         }
 
