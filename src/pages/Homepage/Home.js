@@ -1,14 +1,17 @@
 import React from 'react';
-import NavBar from '../../components/modules/nav/NavBar'
+import Hero from '../../components/modules/hero/Hero'
 
 function Home (){
     return(
         <div>
-            <NavBar />
+            <Hero 
+                title={'Fashion Redefined'}
+                subText={"At Winnycute Custom Apparels you are guaranteed of the best. We've got the best blend for every Occasion"}
+                img={'assets/pictures/HeroImage.jpg'}
+                />
             <h1>
                 HOME PAGE/ LANDING PAGE
             </h1>
-            <img src = 'assets/pictures/HeroImage.jpg' alt = 'bg' />
         </div>
     )
 }
