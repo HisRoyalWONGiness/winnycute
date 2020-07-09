@@ -9,6 +9,7 @@ export const NavStyle = styled.div `
     width: 100%;
     height: 8vh;
     background: #0D0D0D;
+    transition: 1s;
 
     .logo{
         position: relative;
