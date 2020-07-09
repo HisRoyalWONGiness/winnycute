@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const HeroStyle = styled.div`
     width: 100%;
     height: 100vh;
-    background: white;/*url(${props => props.img});*/
+    background: url(${props => props.img});
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: 75%;
