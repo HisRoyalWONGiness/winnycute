@@ -37,6 +37,7 @@ export const HeroStyle = styled.div`
                 height: 35px;
                 border: none;
                 border-radius: 2px;
+                margin: 10px auto
             }
 
             button{
@@ -58,6 +59,9 @@ export const HeroStyle = styled.div`
             margin: auto;
             font-size: 50px;
 
+            @media (max-width: 970px){
+                font-size: 40px;
+            }
         }
 
         p {
