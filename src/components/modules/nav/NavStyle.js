@@ -59,7 +59,7 @@ export const NavStyle = styled.div `
                 background: #FF0099;
                 width: 25px;
                 height: 2px;
-                margin: 4px;
+                margin: 5px;
                 border-radius: 2px;
             }
 
@@ -67,7 +67,7 @@ export const NavStyle = styled.div `
                 background: #FF0099;
                 width: 25px;
                 height: 2px;
-                margin: 4px;
+                margin: 5px;
                 border-radius: 2px;
             }
 
@@ -75,7 +75,7 @@ export const NavStyle = styled.div `
                 background: #FF0099;
                 width: 25px;
                 height: 2px;
-                margin: 4px;
+                margin: 5px;
                 border-radius: 2px;
             }
 
