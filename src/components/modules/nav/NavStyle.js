@@ -57,6 +57,7 @@ export const NavStyle = styled.div `
                 justify-content: space-evenly;
                 transform: translateX(100%);
                 transition: transform 0.5s ease-in;
+                opacity: 0;
 
                 .single_item{
                     opacity: 1;
@@ -66,6 +67,7 @@ export const NavStyle = styled.div `
 
         .nav_items_clicked{
             transform: translateX(0%);
+            opacity: 1;
         }
     }
 `
