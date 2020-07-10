@@ -46,8 +46,7 @@ export const NavStyle = styled.div `
                 }
                 position: absolute;
                 right: 0px;
-                height: 92vh;
-                top: 8vh;
+                height: 100vh;
                 margin-right: 0em;
                 background: #0D0D0D;
                 display: flex;
