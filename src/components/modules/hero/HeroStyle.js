@@ -80,3 +80,7 @@ export const HeroStyle = styled.div`
     }
 
 `
+
+export const ButtonStyle = styled.div`
+    
+`
