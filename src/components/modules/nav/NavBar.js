@@ -10,6 +10,7 @@ class NavBar extends React.Component{
             scrollPosition: 0,
             display: false,
             background: '',
+            toggle: 'translateX(100%)'
         }
     }
 
@@ -34,22 +35,40 @@ class NavBar extends React.Component{
       }
     /* The above section controls the NavBar fade on Scroll*/
 
+
+    /*  Code below controls the Hamburger Menu Button */
     onClickButton = () => {
         this.setState((prevState) => ({
             display: !prevState.display
-          }));
+          }), this.change);
     }
+
+    change = () =>{
+        if (this.state.display === true){
+            this.setState({
+                toggle: 'translateX(0%)'
+            })
+        }
+        else{
+            this.setState({
+                toggle: 'translateX(100%)'
+            })
+        }
+    }
+
+    /*  Code above controls the Hamburger Menu Button */
+
+    
     render(){
         const styleContain = {}
         return(
             <NavStyle>
                 {window.onscroll = () => this.checkScroll()}
-                {console.log(this.state.display)}
                 <div  style = {{...styleContain, backgroundColor: this.state.background, }} className = 'container'>
                     <div className = 'logo'>
                         <img src = 'l.jpg' alt = 'Logo here' />
                     </div>
-                    <div className = {this.state.display ? 'nav_items nav_items_clicked' : 'nav_items'}>
+                    <div style = {{...styleContain, transform: this.state.toggle }} className = 'nav_items'>
                         <NavLink exact to = '/' className = 'single_item'>Home</NavLink>
                         <NavLink exact to = '/whatweoffer' className = 'single_item'>What we Offer</NavLink>
                         <NavLink exact to = '/topwears' className = 'single_item'>Top Wears</NavLink>

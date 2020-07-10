@@ -51,22 +51,16 @@ export const NavStyle = styled.div `
                 background: #0D0D0D;
                 display: flex;
                 flex-direction: column;
-                width: 45%;
+                width: 50%;
                 align-items: center;
                 justify-content: space-evenly;
-                transform: translateX(100%);
                 transition: transform 0.5s ease-in;
-                opacity: 0;
+                opacity: 1;
 
                 .single_item{
-                    opacity: 1;
+                    opacity: 0.5;
                 }
             }
-        }
-
-        .nav_items_clicked{
-            transform: translateX(0%);
-            opacity: 1;
         }
     }
 `
