@@ -10,6 +10,9 @@ class NavBar extends React.Component{
             scrollPosition: 0,
             display: false,
             background: '',
+            toggle: 'translateX(100%)',
+            opacity: '0',
+            displayBackdrop: 'none'
         }
     }
 
@@ -34,22 +37,50 @@ class NavBar extends React.Component{
       }
     /* The above section controls the NavBar fade on Scroll*/
 
+
+    /*  Code below controls the Hamburger Menu Button */
     onClickButton = () => {
         this.setState((prevState) => ({
             display: !prevState.display
-          }));
+          }), this.change);
     }
+
+    change = () =>{
+        if (this.state.display === true){
+            this.setState({
+                toggle: 'translateX(0%)',
+                opacity: '1',
+                displayBackdrop: 'block'
+            })
+        }
+        else{
+            this.setState({
+                toggle: 'translateX(100%)',
+                opacity: '0',
+                displayBackdrop: 'none'
+            })
+        }
+    }
+
+    onClickBackdrop = () =>{
+        this.setState({
+            display: false
+        })
+    }
+    /*  Code above controls the Hamburger Menu Button */
+
+    
     render(){
         const styleContain = {}
         return(
-            <NavStyle>
+            <NavStyle transform = {this.state.toggle} opacity = {this.state.opacity} display = {this.state.displayBackdrop}>
                 {window.onscroll = () => this.checkScroll()}
-                {console.log(this.state.display)}
+                <div onClick = {this.onClickBackdrop} className = 'backdrop'></div>
                 <div  style = {{...styleContain, backgroundColor: this.state.background, }} className = 'container'>
                     <div className = 'logo'>
-                        <img src = 'l.jpg' alt = 'Logo here' />
+                        <img src = 'l.jpg' alt = 'Logo here' />{this.state.opacity} {this.state.toggle}
                     </div>
-                    <div className = {this.state.display ? 'nav_items nav_items_clicked' : 'nav_items'}>
+                    <div className = 'nav_items'>
                         <NavLink exact to = '/' className = 'single_item'>Home</NavLink>
                         <NavLink exact to = '/whatweoffer' className = 'single_item'>What we Offer</NavLink>
                         <NavLink exact to = '/topwears' className = 'single_item'>Top Wears</NavLink>

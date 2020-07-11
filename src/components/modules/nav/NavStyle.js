@@ -2,6 +2,19 @@ import styled from 'styled-components'
 
 export const NavStyle = styled.div `
 
+
+    .backdrop{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        filter: blur(80px);
+        -webkit-filter:(40px);
+        z-index: 2;
+        display: ${props => props.display};
+    }
+
     .container{
         display: flex;
         justify-content: space-between;
@@ -46,27 +59,23 @@ export const NavStyle = styled.div `
                 }
                 position: absolute;
                 right: 0px;
+                top: 0;
                 height: 100vh;
                 margin-right: 0em;
                 background: #0D0D0D;
                 display: flex;
                 flex-direction: column;
-                width: 45%;
+                width: 50%;
                 align-items: center;
                 justify-content: space-evenly;
-                transform: translateX(100%);
-                transition: transform 0.5s ease-in;
-                opacity: 0;
+                transform: ${props => props.transform};
+                transition: transform 0.3s;
+                opacity: ${props => props.opacity};
 
                 .single_item{
                     opacity: 1;
                 }
             }
-        }
-
-        .nav_items_clicked{
-            transform: translateX(0%);
-            opacity: 1;
         }
     }
 `
