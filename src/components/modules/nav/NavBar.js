@@ -55,7 +55,6 @@ class NavBar extends React.Component{
             })
         }
     }
-
     /*  Code above controls the Hamburger Menu Button */
 
     
