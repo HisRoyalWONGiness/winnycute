@@ -4,7 +4,7 @@ import {HeroStyle} from './HeroStyle'
 function Hero ({ title, subText, img, mobileHeight}){
    return (
         <HeroStyle img={img} /*mobileHeight={mobileHeight}*/>
-            <div class="hero-text">
+            <div className="hero-text">
                 <h1>{title}</h1>
                 <p>{subText}</p>
                 <form className = 'form_style'>

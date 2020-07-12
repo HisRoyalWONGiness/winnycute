@@ -73,7 +73,7 @@ export const HeroStyle = styled.div`
             background: #0D0D0D50;
 
             @media (max-width: 970px){
-                width: 70vw;
+                width: 90vw;
                 background: transparent;
             }
         }
