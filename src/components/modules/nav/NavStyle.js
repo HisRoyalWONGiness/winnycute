@@ -70,7 +70,6 @@ export const NavStyle = styled.div `
                 opacity: ${props => props.opacity};
                 transform: ${props => props.transform};
                 transition: ${props => props.transition};
-                transition: opacity 0.1s;
                 
 
                 .single_item{
