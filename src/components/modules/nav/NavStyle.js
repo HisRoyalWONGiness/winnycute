@@ -12,7 +12,6 @@ export const NavStyle = styled.div `
         filter: blur(80px);
         -webkit-filter:(40px);
         z-index: 2;
-        display: ${props => props.display};
     }
 
     .container{
@@ -65,12 +64,13 @@ export const NavStyle = styled.div `
                 background: #0D0D0D;
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                width: 65%;
                 align-items: center;
                 justify-content: space-evenly;
-                transform: ${props => props.transform};
-                transition: transform 0.3s;
                 opacity: ${props => props.opacity};
+                transform: ${props => props.transform};
+                transition: ${props => props.transition};
+                
 
                 .single_item{
                     opacity: 1;
