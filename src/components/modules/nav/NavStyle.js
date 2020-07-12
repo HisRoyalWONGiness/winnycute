@@ -76,6 +76,17 @@ export const NavStyle = styled.div `
                     opacity: 1;
                 }
             }
+
+            @keyframes nav_items_Fade{
+                from{
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
         }
     }
 `
