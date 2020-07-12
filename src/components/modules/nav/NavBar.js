@@ -12,7 +12,7 @@ class NavBar extends React.Component{
             background: '',
             toggle: 'translateX(100%)',
             opacity: '0',
-            displayBackdrop: 'none'
+            transition: '0s',
         }
     }
 
@@ -48,23 +48,24 @@ class NavBar extends React.Component{
     change = () =>{
         if (this.state.display === true){
             this.setState({
-                toggle: 'translateX(0%)',
                 opacity: '1',
-                displayBackdrop: 'block'
+                toggle: 'translateX(0%)',
+                transition: '0.3s'
             })
         }
         else{
             this.setState({
-                toggle: 'translateX(100%)',
                 opacity: '0',
-                displayBackdrop: 'none'
+                toggle: 'translateX(100%)',
+                transition: '0s'
             })
         }
     }
 
     onClickBackdrop = () =>{
         this.setState({
-            display: false
+            display: false,
+            toggle: 'translateX(100%)',
         })
     }
     /*  Code above controls the Hamburger Menu Button */
@@ -73,9 +74,9 @@ class NavBar extends React.Component{
     render(){
         const styleContain = {}
         return(
-            <NavStyle transform = {this.state.toggle} opacity = {this.state.opacity} display = {this.state.displayBackdrop}>
+            <NavStyle opacity = {this.state.opacity} transform = {this.state.toggle} display = {this.state.displayBackdrop} transition = {this.state.transition}>
                 {window.onscroll = () => this.checkScroll()}
-                <div onClick = {this.onClickBackdrop} className = 'backdrop'></div>
+                {this.state.display ? <div onClick = {this.onClickBackdrop} className = 'backdrop'></div> : null}
                 <div  style = {{...styleContain, backgroundColor: this.state.background, }} className = 'container'>
                     <div className = 'logo'>
                         <img src = 'l.jpg' alt = 'Logo here' />{this.state.opacity} {this.state.toggle}
