@@ -74,7 +74,7 @@ class NavBar extends React.Component{
     render(){
         const styleContain = {}
         return(
-            <NavStyle opacity = {this.state.opacity} transform = {this.state.toggle} display = {this.state.displayBackdrop} transition = {this.state.transition}>
+            <NavStyle transform = {this.state.toggle} display = {this.state.displayBackdrop}>
                 {window.onscroll = () => this.checkScroll()}
                 {this.state.display ? <div onClick = {this.onClickBackdrop} className = 'backdrop'></div> : null}
                 <div  style = {{...styleContain, backgroundColor: this.state.background, }} className = 'container'>
@@ -82,13 +82,29 @@ class NavBar extends React.Component{
                         <img src = 'l.jpg' alt = 'Logo here' />{this.state.opacity} {this.state.toggle}
                     </div>
                     <div className = 'nav_items'>
-                        <NavLink exact to = '/' className = 'single_item'>Home</NavLink>
-                        <NavLink exact to = '/whatweoffer' className = 'single_item'>What we Offer</NavLink>
-                        <NavLink exact to = '/topwears' className = 'single_item'>Top Wears</NavLink>
-                        <NavLink exact to = '/catalogue' className = 'single_item'>Catalogue</NavLink>
-                        <NavLink exact to = '/contact' className = 'single_item'>Contact Us</NavLink>
+                        <NavLink exact to = '/' className = 'single_item' activeClassName = 'when_active'>Home<span></span></NavLink>
+                        <NavLink exact to = '/whatweoffer' className = 'single_item' activeClassName = 'when_active'>What we Offer<span></span></NavLink>
+                        <NavLink exact to = '/topwears' className = 'single_item' activeClassName = 'when_active'>Top Wears<span></span></NavLink>
+                        <NavLink exact to = '/catalogue' className = 'single_item' activeClassName = 'when_active'>Catalogue<span></span></NavLink>
+                        <NavLink exact to = '/contact' className = 'single_item' activeClassName = 'when_active'>Contact Us<span></span></NavLink>
+                    </div>
+
+                    { /*Navigation on Mobile */}
+
+                    <div className = 'nav_items_mobile'>
+                        <NavLink exact to = '/' className = 'single_item' activeClassName = 'when_active_mobile'>Home<span></span></NavLink>
+                        <NavLink exact to = '/whatweoffer' className = 'single_item' activeClassName = 'when_active_mobile'>What we Offer<span></span></NavLink>
+                        <NavLink exact to = '/topwears' className = 'single_item' activeClassName = 'when_active_mobile'>Top Wears<span></span></NavLink>
+                        <NavLink exact to = '/catalogue' className = 'single_item' activeClassName = 'when_active_mobile'>Catalogue<span></span></NavLink>
+                        <NavLink exact to = '/contact' className = 'single_item' activeClassName = 'when_active_mobile'>Contact Us<span></span></NavLink>
                     </div>
                 </div>
+
+
+               
+
+               
+
                 <Button onClick = {this.onClickButton} />
             </NavStyle>
         )

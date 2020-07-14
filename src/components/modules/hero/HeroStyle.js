@@ -54,6 +54,14 @@ export const HeroStyle = styled.div`
                 outline: none;
                 cursor: pointer;
             }
+
+            @media(max-width: 970px){
+                flex-direction: column;
+
+                button{
+                    margin: auto;
+                }
+            }
         }
 
         h1 {
