@@ -116,9 +116,8 @@ export const NavStyle = styled.div `
                 }
 
                 .when_active_mobile{
-                    padding-left: 80px;
+                    margin: 1.5em auto;
                     align-items: center;
-                    margin-left: 0;
 
                     span{
                         position: absolute;
@@ -157,6 +156,8 @@ export const ButtonStyle = styled.div `
         height: 2px;
         margin: 5px;
         border-radius: 2px;
+        transform: ${props => props.line1};
+        transition: 0.5s;
     }
 
     .line2{
@@ -165,6 +166,7 @@ export const ButtonStyle = styled.div `
         height: 2px;
         margin: 5px;
         border-radius: 2px;
+        opacity: ${props => props.line2};
     }
 
     .line3{
@@ -173,10 +175,14 @@ export const ButtonStyle = styled.div `
         height: 2px;
         margin: 5px;
         border-radius: 2px;
+        transform: ${props => props.line3};
+        transition: 0.5s;
     }
 
     @media (max-width: 999px){
         display: block;
     }
+
+
 
 `
