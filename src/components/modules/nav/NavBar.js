@@ -92,11 +92,11 @@ class NavBar extends React.Component{
                     { /*Navigation on Mobile */}
 
                     <div className = 'nav_items_mobile'>
-                        <NavLink exact to = '/' className = 'single_item' activeClassName = 'when_active_mobile'>Home<span></span></NavLink>
-                        <NavLink exact to = '/whatweoffer' className = 'single_item' activeClassName = 'when_active_mobile'>What we Offer<span></span></NavLink>
-                        <NavLink exact to = '/topwears' className = 'single_item' activeClassName = 'when_active_mobile'>Top Wears<span></span></NavLink>
-                        <NavLink exact to = '/catalogue' className = 'single_item' activeClassName = 'when_active_mobile'>Catalogue<span></span></NavLink>
-                        <NavLink exact to = '/contact' className = 'single_item' activeClassName = 'when_active_mobile'>Contact Us<span></span></NavLink>
+                        <NavLink exact to = '/' onClick = {this.onClickBackdrop} className = 'single_item' activeClassName = 'when_active_mobile'>Home<span></span></NavLink>
+                        <NavLink exact to = '/whatweoffer' onClick = {this.onClickBackdrop} className = 'single_item' activeClassName = 'when_active_mobile'>What we Offer<span></span></NavLink>
+                        <NavLink exact to = '/topwears' onClick = {this.onClickBackdrop} className = 'single_item' activeClassName = 'when_active_mobile'>Top Wears<span></span></NavLink>
+                        <NavLink exact to = '/catalogue' onClick = {this.onClickBackdrop} className = 'single_item' activeClassName = 'when_active_mobile'>Catalogue<span></span></NavLink>
+                        <NavLink exact to = '/contact' onClick = {this.onClickBackdrop} className = 'single_item' activeClassName = 'when_active_mobile'>Contact Us<span></span></NavLink>
                     </div>
                 </div>
 
