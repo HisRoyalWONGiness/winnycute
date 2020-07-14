@@ -45,6 +45,33 @@ export const NavStyle = styled.div `
             .single_item{
                 margin-left: 1em;
                 margin-right: 1em;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                :hover{
+                    span{
+                        position: absolute;
+                        width: 30px;
+                        border-bottom: 1.5px solid #FF0099;
+                        padding-bottom: 1.5rem;
+                        z-index: 0;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .when_active{
+                span{
+                    position: absolute;
+                    width: 30px;
+                    border-bottom: 1.5px solid #FF0099;
+                    padding-bottom: 1.5rem;
+                    z-index: 0;
+                    margin: auto;
+                }
             }
 
             a{
@@ -52,7 +79,15 @@ export const NavStyle = styled.div `
                 text-decoration: none;
             }
 
-            @media (max-width: 1000px ){
+            @media (max-width: 999px ){
+                display: none;
+            }
+        }
+
+        .nav_items_mobile{
+            display: none;
+
+            @media(max-width: 999px){
                 body{
                     overflow-x: hidden;
                 }
@@ -65,30 +100,45 @@ export const NavStyle = styled.div `
                 display: flex;
                 flex-direction: column;
                 width: 65%;
-                align-items: center;
-                justify-content: space-evenly;
-                opacity: ${props => props.opacity};
+                justify-content: center;
+                opacity: 1;
                 transform: ${props => props.transform};
-                transition: ${props => props.transition};
+                transition: 0.3s;
                 
 
                 .single_item{
                     opacity: 1;
+                    margin: 1.5em;
+                    margin-left: 12%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
                 }
-            }
 
-            @keyframes nav_items_Fade{
-                from{
-                    opacity: 0;
-                    transform: translateX(50px);
-                }
-                to{
-                    opacity: 1;
-                    transform: translateX(0px);
+                .when_active_mobile{
+                    padding-left: 80px;
+                    align-items: center;
+                    margin-left: 0;
+
+                    span{
+                        position: absolute;
+                        width: 60px;
+                        border-bottom: 1.5px solid #FF0099;
+                        padding-bottom: 1.5rem;
+                        z-index: 100;
+                        margin: auto;
+                    }
+                 }
+
+
+                a{
+                    color: white;
+                    text-decoration: none;
                 }
             }
         }
     }
+    
 `
 
 export const ButtonStyle = styled.div `
