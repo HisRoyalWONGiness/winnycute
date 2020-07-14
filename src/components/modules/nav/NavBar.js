@@ -13,6 +13,9 @@ class NavBar extends React.Component{
             toggle: 'translateX(100%)',
             opacity: '0',
             transition: '0s',
+            line1: '',
+            line2: '1',
+            line3: '',
         }
     }
 
@@ -50,14 +53,20 @@ class NavBar extends React.Component{
             this.setState({
                 opacity: '1',
                 toggle: 'translateX(0%)',
-                transition: '0.3s'
+                transition: '0.3s',
+                line1: 'rotate(-45deg) translate(-4px,6px)',
+                line2: '0',
+                line3: 'rotate(45deg) translate(-4px,-6px)',
             })
         }
         else{
             this.setState({
                 opacity: '0',
                 toggle: 'translateX(100%)',
-                transition: '0s'
+                transition: '0s',
+                line1: '',
+                line2: '1',
+                line3: '',
             })
         }
     }
@@ -66,6 +75,9 @@ class NavBar extends React.Component{
         this.setState({
             display: false,
             toggle: 'translateX(100%)',
+            line1: '',
+            line2: '1',
+            line3: '',
         })
     }
     /*  Code above controls the Hamburger Menu Button */
@@ -100,12 +112,7 @@ class NavBar extends React.Component{
                     </div>
                 </div>
 
-
-               
-
-               
-
-                <Button onClick = {this.onClickButton} />
+                <Button onClick = {this.onClickButton} line1 = {this.state.line1} line2 = {this.state.line2} line3 = {this.state.line3}/>
             </NavStyle>
         )
     }
