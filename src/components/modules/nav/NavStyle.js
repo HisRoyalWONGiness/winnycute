@@ -112,12 +112,10 @@ export const NavStyle = styled.div `
                     margin-left: 12%;
                     display: flex;
                     flex-direction: column;
-                    align-items: left;
+                    align-items: center;
                 }
 
                 .when_active_mobile{
-                    margin: 1.5em auto;
-                    align-items: center;
 
                     span{
                         position: absolute;
