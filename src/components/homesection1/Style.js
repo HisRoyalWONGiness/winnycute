@@ -35,11 +35,11 @@ export const Style = styled.div`
     .circle_bar_container{
         width: 800px;
         height: 700px;
-        margin: auto;
+        position: relative;
         
         .circle{
             position: absolute;
-            top: 784px;
+            top: 30px;
             right: 9px;
             width: 700px;
             height: 700px;
