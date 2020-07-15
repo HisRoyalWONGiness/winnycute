@@ -9,13 +9,15 @@ export const Style = styled.div`
         margin: auto 4em;
 
         h1{
-            margin-bottom: 3em;
+            margin-bottom: 2em;
             margin-top: 0;
             color: #FF0099;
+            letter-spacing: 3px;
         }
 
         h2{
             margin-bottom: 1.5em;
+            letter-spacing: 3px;
         }
 
         p{
@@ -37,7 +39,7 @@ export const Style = styled.div`
         
         .circle{
             position: absolute;
-            top: 754px;
+            top: 784px;
             right: 9px;
             width: 700px;
             height: 700px;
@@ -56,7 +58,7 @@ export const Style = styled.div`
 
             img{
                 position: relative;
-                margin: 150px 0;
+                margin: 180px 0;
                 width: 350px;
                 border-radius: 50px;
             }
