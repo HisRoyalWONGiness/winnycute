@@ -11,8 +11,6 @@ class NavBar extends React.Component{
             display: false,
             background: '',
             toggle: 'translateX(100%)',
-            opacity: '0',
-            transition: '0s',
             line1: '',
             line2: '1',
             line3: '',
@@ -42,35 +40,13 @@ class NavBar extends React.Component{
 
 
     /*  Code below controls the Hamburger Menu Button */
+
     onClickButton = () => {
         this.setState((prevState) => ({
             display: !prevState.display
           }), this.change);
     }
-
-    change = () =>{
-        if (this.state.display === true){
-            this.setState({
-                opacity: '1',
-                toggle: 'translateX(0%)',
-                transition: '0.3s',
-                line1: 'rotate(-45deg) translate(-4px,6px)',
-                line2: '0',
-                line3: 'rotate(45deg) translate(-4px,-6px)',
-            })
-        }
-        else{
-            this.setState({
-                opacity: '0',
-                toggle: 'translateX(100%)',
-                transition: '0s',
-                line1: '',
-                line2: '1',
-                line3: '',
-            })
-        }
-    }
-
+    
     onClickBackdrop = () =>{
         this.setState({
             display: false,
@@ -80,6 +56,26 @@ class NavBar extends React.Component{
             line3: '',
         })
     }
+
+    change = () =>{
+        if (this.state.display === true){
+            this.setState({
+                toggle: 'translateX(0%)',
+                line1: 'rotate(-45deg) translate(-4px,6px)',
+                line2: '0',
+                line3: 'rotate(45deg) translate(-4px,-6px)',
+            })
+        }
+        else{
+            this.setState({
+                toggle: 'translateX(100%)',
+                line1: '',
+                line2: '1',
+                line3: '',
+            })
+        }
+    }
+
     /*  Code above controls the Hamburger Menu Button */
 
     
@@ -91,7 +87,7 @@ class NavBar extends React.Component{
                 {this.state.display ? <div onClick = {this.onClickBackdrop} className = 'backdrop'></div> : null}
                 <div  style = {{...styleContain, backgroundColor: this.state.background, }} className = 'container'>
                     <div className = 'logo'>
-                        <img src = 'l.jpg' alt = 'Logo here' />{this.state.opacity} {this.state.toggle}
+                        <img src = 'l.jpg' alt = 'Logo here' />
                     </div>
                     <div className = 'nav_items'>
                         <NavLink exact to = '/' className = 'single_item' activeClassName = 'when_active'>Home<span></span></NavLink>
