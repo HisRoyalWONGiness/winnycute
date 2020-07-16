@@ -4,12 +4,13 @@ export const Style = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 0em -2em;
+    align-items: stretch;
 
     .text_section{
-        max-width: 600px;
+        max-width: 575px;
         margin: auto 4em;
+        padding-right: 1em;
+        box-sizing: border-box;
 
         h1{
             margin-bottom: 2em;
@@ -39,17 +40,9 @@ export const Style = styled.div`
         width: 700px;
         height: 700px;
         position: relative;
-        margin: 0 2em;
+        text-align: right;
 
         @media only screen and (max-width: 2000px){
-            width: 600px;
-        }
-
-        @media only screen and (max-width: 1340px){
-            width: 500px;
-        }
-
-        @media only screen and (max-width: 1230px){
             width: 400px;
         }
 
