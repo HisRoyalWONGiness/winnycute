@@ -25,6 +25,14 @@ export const Style = styled.div`
             margin-top: 0;
             color: #FF0099;
             letter-spacing: 3px;
+
+            ::before{
+                content: '';
+                padding-right: 25px;
+                border-bottom: solid 3px #FF0099;
+                border-left: solid 3px #FF0099;
+                border-radius: 2px;
+            }
         }
 
         h2{
