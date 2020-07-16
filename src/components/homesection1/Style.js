@@ -10,6 +10,7 @@ export const Style = styled.div`
 
     @media only screen and (max-width: 1200px){
         margin-top: 3em;
+        margin-bottom: 0;
     }
 
     .text_section{
@@ -54,6 +55,17 @@ export const Style = styled.div`
 
         @media only screen and (max-width: 1200px){
             width: 100%;
+            height: 800px;
+        }
+
+        @media only screen and (max-width: 720px){
+            width: 100%;
+            height: 580px;
+        }
+
+        @media only screen and (max-width: 470px){
+            width: 100%;
+            height: 420px;
         }
 
         
@@ -69,7 +81,7 @@ export const Style = styled.div`
 
             .bar{
                 position: absolute;
-                top: 10px;
+                top: 0px;
                 right: 0px;
                 width: 105px;
                 height: 700px;
@@ -90,6 +102,7 @@ export const Style = styled.div`
                 .bar{
                     width: 75px;
                     height: 500px;
+                    top: 0px;
                 }
 
                 img{
@@ -107,6 +120,7 @@ export const Style = styled.div`
                 .bar{
                     width: 75px;
                     height: 350px;
+                    top: 0px;
                 }
 
                 img{
