@@ -6,7 +6,7 @@ function WhatWeOfferHome () {
     return(
         <Style>
             <div className = 'text_section'>
-                <h1>What We Offer</h1>
+                <h1><span></span>What We Offer</h1>
                 <p>
                     <h2>Fashion Redefined</h2>
                     We Offer a lot of Luxury wears at really Affordable prices, On wears, Money is never an issue because we make sure Every wear has varieties and prices that can be afforded by everyone.. Our wears tend to exude an aura of uniqueness
