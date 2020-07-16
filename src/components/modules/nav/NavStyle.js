@@ -4,7 +4,8 @@ export const NavStyle = styled.div `
 
 
     .backdrop{
-        position: absolute;
+        position: fixed;
+        top: 0;
         background-color: black;
         width: 100%;
         height: 100%;

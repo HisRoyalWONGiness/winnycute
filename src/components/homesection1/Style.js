@@ -2,7 +2,10 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0em 0em 5em 0em;
 
     .text_section{
         max-width: 600px;
@@ -33,7 +36,7 @@ export const Style = styled.div`
     }
 
     .circle_bar_container{
-        width: 800px;
+        width: 700px;
         height: 700px;
         position: relative;
         
