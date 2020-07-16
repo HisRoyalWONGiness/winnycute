@@ -4,23 +4,29 @@ export const Style = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
+    margin-top: 0em;
+    margin-bottom: 3em;
+
+    @media only screen and (max-width: 1200px){
+        margin-top: 3em;
+    }
 
     .text_section{
         max-width: 575px;
-        margin: auto 4em;
+        margin: auto;
+        margin-left: 2em;
         padding-right: 1em;
         box-sizing: border-box;
 
         h1{
-            margin-bottom: 2em;
+            margin-bottom: 1em;
             margin-top: 0;
             color: #FF0099;
             letter-spacing: 3px;
         }
 
         h2{
-            margin-bottom: 1.5em;
             letter-spacing: 3px;
         }
 
