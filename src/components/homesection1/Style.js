@@ -65,7 +65,7 @@ export const Style = styled.div`
             width: 700px;
             height: 700px;
             border-radius: 50%;
-            background: #FFFFFF10;
+            background: #FFFFFF08;
             text-align: center;
 
             .bar{
@@ -74,7 +74,7 @@ export const Style = styled.div`
                 right: 0px;
                 width: 105px;
                 height: 700px;
-                background: #FFFFFF10;
+                background: #FFFFFF08;
             }
 
             img{
