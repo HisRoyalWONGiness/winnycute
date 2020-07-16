@@ -28,6 +28,7 @@ export const Style = styled.div`
 
             h3{
                 text-decoration: underline;
+                margin-bottom: 0.5em;
             }
 
             .items{
@@ -46,9 +47,14 @@ export const Style = styled.div`
 
         .second_column{
             min-width: 200px;
+
+            @media(max-width: 760px){
+                margin-top: 2em;
+            }
             
             h3{
                 text-decoration: underline;
+                margin-bottom: 0.5em;
             }
 
             .items{
@@ -67,9 +73,14 @@ export const Style = styled.div`
 
         .third_column{
             min-width: 200px;
+
+            @media(max-width: 760px){
+                margin-top: 2em;
+            }
             
             h3{
                 text-decoration: underline;
+                margin-bottom: 0.5em;
             }
 
             .items{
