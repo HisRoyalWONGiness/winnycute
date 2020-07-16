@@ -10,6 +10,7 @@ export const Style = styled.div`
 
     @media only screen and (max-width: 1200px){
         margin-top: 3em;
+        margin-bottom: 0;
     }
 
     .text_section{
@@ -50,6 +51,7 @@ export const Style = styled.div`
 
         @media only screen and (max-width: 2000px){
             width: 400px;
+            height: 400px;
         }
 
         @media only screen and (max-width: 1200px){
