@@ -2,24 +2,24 @@ import styled from 'styled-components';
 
 export const Style = styled.div`
     
+    h1{
+        margin-bottom: 1em;
+        margin-top: 0;
+        margin-left: 1em;
+        color: #FF0099;
+        letter-spacing: 3px;
+
+        ::before{
+            content: '';
+            padding-right: 25px;
+            border-bottom: solid 3px #FF0099;
+            border-left: solid 3px #FF0099;
+            border-radius: 2px;
+        }
+    }  
 
     .grand_container{
-        margin-left: 2em;
-
-        h1{
-            margin-bottom: 1em;
-            margin-top: 0;
-            color: #FF0099;
-            letter-spacing: 3px;
-
-            ::before{
-                content: '';
-                padding-right: 25px;
-                border-bottom: solid 3px #FF0099;
-                border-left: solid 3px #FF0099;
-                border-radius: 2px;
-            }
-        }    
+          
 
         .container1{
             display: flex;
