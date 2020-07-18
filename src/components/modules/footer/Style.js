@@ -48,7 +48,7 @@ export const Style = styled.div`
         .second_column{
             min-width: 200px;
 
-            @media(max-width: 760px){
+            @media(max-width: 431px){
                 margin-top: 2em;
             }
             
@@ -74,7 +74,7 @@ export const Style = styled.div`
         .third_column{
             min-width: 200px;
 
-            @media(max-width: 760px){
+            @media(max-width: 431px){
                 margin-top: 2em;
             }
             
