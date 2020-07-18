@@ -5,8 +5,8 @@ import {Style} from './Style';
 function HomeCatalogue (){
     return(
         <Style>
+            <h1>Catalogue</h1>
             <div className = 'grand_container'>
-                <h1>Catalogue</h1>
                 <div className = 'container1'>
                     <div className = 'full1'>
 
