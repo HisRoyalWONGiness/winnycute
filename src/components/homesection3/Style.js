@@ -30,14 +30,13 @@ export const Style = styled.div`
                 width: 25%;
                 min-width: 350px;
                 height: 80vh;
-                background: url('assets/pictures/catalogue1.jpg');
+                background: url('assets/pictures/Optimized-catalogue1.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
                 background-size: cover;
                 margin: auto;
                 border-radius: 8px;
                 margin-top: 2em;
-                margin-bottom: 2em;
             }
 
             .with_text{
@@ -50,7 +49,7 @@ export const Style = styled.div`
                 .image{
                     width: 100%;
                     height: 70%;
-                    background: url('assets/pictures/catalogue4.jpg');
+                    background: url('assets/pictures/Optimized-catalogue4.jpg');
                     background-repeat: no-repeat;
                     background-position: 50% 5%;
                     background-size: cover;
@@ -81,7 +80,7 @@ export const Style = styled.div`
                 width: 25%;
                 min-width: 350px;
                 height: 80vh;
-                background: url('assets/pictures/catalogue9.jpg');
+                background: url('assets/pictures/Optimized-catalogue9.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
                 background-size: cover;
@@ -112,7 +111,7 @@ export const Style = styled.div`
                     width: 100%;
                     min-width: 350px;
                     height: 45%;
-                    background: url('assets/pictures/catalogue2.jpg');
+                    background: url('assets/pictures/Optimized-catalogue2.jpg');
                     background-repeat: no-repeat;
                     background-position: 50% 25%;
                     background-size: cover;
@@ -124,10 +123,10 @@ export const Style = styled.div`
                     width: 100%;
                     min-width: 350px;
                     height: 45%;
-                    background: url('assets/pictures/catalogue5.jpg');
+                    background: url('assets/pictures/Optimized-catalogue5.jpg');
                     background-repeat: no-repeat;
                     background-position: 50% 35%;
-                    background-size: 100%;
+                    background-size: cover;
                     margin: auto;
                     border-radius: 8px;
                 }
@@ -137,7 +136,7 @@ export const Style = styled.div`
                 width: 25%;
                 min-width: 350px;
                 height: 80vh;
-                background: url('assets/pictures/catalogue6.jpg');
+                background: url('assets/pictures/Optimized-catalogue6.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
                 background-size: cover;
@@ -159,7 +158,7 @@ export const Style = styled.div`
                     width: 100%;
                     min-width: 350px;
                     height: 45%;
-                    background: url('assets/pictures/catalogue7.jpg');
+                    background: url('assets/pictures/Optimized-catalogue7.jpg');
                     background-repeat: no-repeat;
                     background-position: 50% 25%;
                     background-size: cover;
@@ -171,10 +170,10 @@ export const Style = styled.div`
                     width: 100%;
                     min-width: 350px;
                     height: 45%;
-                    background: url('assets/pictures/catalogue8.jpg');
+                    background: url('assets/pictures/Optimized-catalogue8.jpg');
                     background-repeat: no-repeat;
                     background-position: 50% 5%;
-                    background-size: 100%;
+                    background-size: cover;
                     margin: auto;
                     border-radius: 8px;
                 }
