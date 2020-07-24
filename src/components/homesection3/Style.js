@@ -19,7 +19,8 @@ export const Style = styled.div`
     }  
 
     .grand_container{
-          
+        width: 80%;
+        margin: auto;
 
         .container1{
             display: flex;

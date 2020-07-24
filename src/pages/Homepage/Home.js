@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../../components/modules/hero/Hero';
 import WhatWeOfferHome from '../../components/homesection1/WhatWeOfferHome';
 import HomeCatalogue from '../../components/homesection3/HomeCatalogue';
+import ImageSlider from '../../components/homesection2/ImageSlider'
 
 function Home (){
     return(
@@ -12,6 +13,7 @@ function Home (){
                 img={'assets/pictures/HeroImage.jpg'}
                 />
             <WhatWeOfferHome />
+            <ImageSlider />
             <HomeCatalogue />
         </div>
     )
