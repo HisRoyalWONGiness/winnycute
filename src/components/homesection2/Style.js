@@ -57,7 +57,7 @@ export const Style = styled.div`
     }
 
     .cards-slider.active-slide-${props => props.num} #card-${props => props.num}{
-            opacity: 1;
+            transform: scale(1);
         }
     
 `
@@ -67,12 +67,11 @@ export const StyleCard = styled.div`
     .card{
         color: red;
         margin: auto;
-        background: blue;
         width: 350px;
         height: 400px;
         flex: 1;
-        opacity: 0.5;
-        transition: opacity 0.3s linear;
+        transform: scale(0.7);
+        transition: opacity 0.3s linear, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 
 
