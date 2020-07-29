@@ -1,9 +1,9 @@
 import React from 'react'
 import {HeroStyle} from './HeroStyle'
 
-function Hero ({ title, subText, img, mobileHeight}){
+function Hero ({ title, subText, img}){
    return (
-        <HeroStyle img={img} /*mobileHeight={mobileHeight}*/>
+        <HeroStyle img={img}>
             <div className="hero-text">
                 <h1>{title}</h1>
                 <p>{subText}</p>

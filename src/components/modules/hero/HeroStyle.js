@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const HeroStyle = styled.div`
     width: 100%;
     height: 100vh;
-    background: url(${props => props.img});
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${props => props.img});
     background-repeat: no-repeat;
     background-position: 50% 25%;
-    background-size: 75%;
+    background-size: cover;
 
     @media (max-width: 1020px){
         background-size: cover;
@@ -33,7 +33,7 @@ export const HeroStyle = styled.div`
 
             input{
                 width: 330px;
-                min-width: 200px;
+                min-width: 100px;
                 height: 35px;
                 border: none;
                 border-radius: 2px;
@@ -78,7 +78,6 @@ export const HeroStyle = styled.div`
             font-size: 18px;
             width: 30vw;
             margin: 1em auto;
-            background: #0D0D0D50;
 
             @media (max-width: 970px){
                 width: 90vw;
