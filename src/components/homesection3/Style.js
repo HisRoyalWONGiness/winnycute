@@ -29,7 +29,7 @@ export const Style = styled.div`
 
             .full1{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 background: url('assets/pictures/Optimized-catalogue1.jpg');
                 background-repeat: no-repeat;
@@ -42,7 +42,7 @@ export const Style = styled.div`
 
             .with_text{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 margin: auto;
                 border-radius: 8px;
@@ -79,7 +79,7 @@ export const Style = styled.div`
 
                 .full2{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 background: url('assets/pictures/Optimized-catalogue9.jpg');
                 background-repeat: no-repeat;
@@ -100,7 +100,7 @@ export const Style = styled.div`
 
             .halves1{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 margin: auto;
                 display: flex;
@@ -110,7 +110,7 @@ export const Style = styled.div`
 
                 .halves1_1st{
                     width: 100%;
-                    min-width: 350px;
+                    min-width: 300px;
                     height: 45%;
                     background: url('assets/pictures/Optimized-catalogue2.jpg');
                     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ export const Style = styled.div`
 
                 .halves1_2nd{
                     width: 100%;
-                    min-width: 350px;
+                    min-width: 300px;
                     height: 45%;
                     background: url('assets/pictures/Optimized-catalogue5.jpg');
                     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ export const Style = styled.div`
 
             .full_last_section{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 background: url('assets/pictures/Optimized-catalogue6.jpg');
                 background-repeat: no-repeat;
@@ -147,7 +147,7 @@ export const Style = styled.div`
 
             .halves2{
                 width: 25%;
-                min-width: 350px;
+                min-width: 300px;
                 height: 80vh;
                 margin: auto;
                 display: flex;
@@ -157,7 +157,7 @@ export const Style = styled.div`
 
                 .halves2_1st{
                     width: 100%;
-                    min-width: 350px;
+                    min-width: 300px;
                     height: 45%;
                     background: url('assets/pictures/Optimized-catalogue7.jpg');
                     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ export const Style = styled.div`
 
                 .halves2_2nd{
                     width: 100%;
-                    min-width: 350px;
+                    min-width: 300px;
                     height: 45%;
                     background: url('assets/pictures/Optimized-catalogue8.jpg');
                     background-repeat: no-repeat;
