@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     margin: auto;
-    margin-bottom: 30em;
+    margin-bottom: 7em;
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 400px;
     background: #FFFFFF08;
 
     .prev_button{
