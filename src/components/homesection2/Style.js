@@ -5,7 +5,7 @@ export const Style = styled.div`
     margin-bottom: 30em;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 420px;
     background: #FFFFFF08;
 
     .prev_button{
