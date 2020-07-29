@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     margin: auto;
-    margin-bottom: 3em;
-    background: red;
+    margin-bottom: 30em;
     position: relative;
     width: 100%;
-    
+    height: 400px;
+    background: #FFFFFF08;
+
     .prev_button{
         position: absolute;
         width: 30px;
@@ -60,6 +61,7 @@ export const Style = styled.div`
 
     .cards-slider.active-slide-${props => props.num} #card-${props => props.num}{
             transform: scale(1);
+            opacity: 1;
         }
     
 `
@@ -72,6 +74,7 @@ export const StyleCard = styled.div`
         width: 350px;
         height: 400px;
         flex: 1;
+        opacity: 0.5;
         transform: scale(0.7);
         transition: opacity 0.3s linear, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         
@@ -84,7 +87,6 @@ export const StyleCard = styled.div`
             object-position: 50% 15%;
             object-fit: cover;
             margin: auto;
-            border-radius: 8px;
         }
     }
 `

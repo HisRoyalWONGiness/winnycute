@@ -14,9 +14,7 @@ function Home (){
                 img={'assets/pictures/HeroImage.jpg'}
                 />
             <WhatWeOfferHome />
-            <div className = 'display-hidden'>
-                <ImageSlider />
-            </div>
+            <ImageSlider />
             <HomeCatalogue />
         </HomeStyle>
     )
