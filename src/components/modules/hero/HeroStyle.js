@@ -3,9 +3,9 @@ import styled from "styled-components"
 export const HeroStyle = styled.div`
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${props => props.img});
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${props => props.img});
     background-repeat: no-repeat;
-    background-position: 50% 25%;
+    background-position: 50% 20%;
     background-size: cover;
 
     @media (max-width: 1020px){
