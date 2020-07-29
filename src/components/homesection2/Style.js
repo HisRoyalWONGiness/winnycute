@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     margin: auto;
-    margin-bottom: 40em;
+    margin-bottom: 3em;
     background: red;
     position: relative;
-
+    width: 100%;
+    
     .prev_button{
         position: absolute;
         width: 30px;
@@ -16,7 +17,7 @@ export const Style = styled.div`
         top: 50%;
         outline: none;
         cursor: pointer;
-        z-index: 99;
+        z-index: 90;
     }
 
     .next_button{
@@ -29,13 +30,14 @@ export const Style = styled.div`
         top: 50%;
         outline: none;
         cursor: pointer;
-        z-index: 99;
+        z-index: 90;
     }
 
     .cards-slider{
         position: relative;
         max-width: 350px;
         margin: 0 auto;
+        
 
         ::after {
             content: '';
@@ -53,7 +55,7 @@ export const Style = styled.div`
             width: 100%;
             display: flex;
             transition: transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        }
+            }
     }
 
     .cards-slider.active-slide-${props => props.num} #card-${props => props.num}{
@@ -72,7 +74,7 @@ export const StyleCard = styled.div`
         flex: 1;
         transform: scale(0.7);
         transition: opacity 0.3s linear, transform 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
+        
 
 
         img{
