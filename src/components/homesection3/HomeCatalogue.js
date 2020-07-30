@@ -17,7 +17,7 @@ function HomeCatalogue (){
                             
                         </div>
                         <div className = 'text'>
-                            These are available wears for the females who loveAnkara fashion. crazy and enthusiastic about it.<br />
+                            <p>These are available wears for the females who loveAnkara fashion. crazy and enthusiastic about it.</p><br />
                             <button> Contact Us</button>
                         </div>
                     </div>

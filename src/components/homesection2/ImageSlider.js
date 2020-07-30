@@ -34,6 +34,7 @@ class ImageSlider extends React.Component{
         const {properties, property} = this.state;
         return(
             <Style num = {this.state.position}>
+                <h1>Top Apparels</h1>
                 <button
                     onClick = {() => this.prevProperty()}
                     disabled = {this.state.position === 0}
