@@ -1,5 +1,6 @@
 import React from 'react';
 import {Style} from './Style';
+import {Link} from 'react-router-dom';
 
 function ContactCall (){
     return(
@@ -14,7 +15,7 @@ function ContactCall (){
                     </h4>
                 </p>
                 <button>
-                    Contact Us
+                    <Link exact to = '/contact'>Contact Us</Link>
                 </button>
             </p>
         </Style>
