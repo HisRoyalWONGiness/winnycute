@@ -4,6 +4,7 @@ import WhatWeOfferHome from '../../components/homesection1/WhatWeOfferHome';
 import HomeCatalogue from '../../components/homesection3/HomeCatalogue';
 import ImageSlider from '../../components/homesection2/ImageSlider'
 import {HomeStyle} from './HomeStyle';
+import ContactCall from '../../components/homesection4/ContactCall';
 
 function Home (){
     return(
@@ -16,6 +17,7 @@ function Home (){
             <WhatWeOfferHome />
             <ImageSlider />
             <HomeCatalogue />
+            <ContactCall />
         </HomeStyle>
     )
 }

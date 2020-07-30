@@ -2,11 +2,21 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     margin: auto;
-    margin-bottom: 7em;
+    margin-bottom: 6em;
     position: relative;
     width: 100%;
     height: 400px;
     background: #FFFFFF08;
+
+    h1{
+            position: absolute;
+            margin-left: 1em;
+            top: -45px;
+            margin-bottom: 1em;
+            margin-top: 0;
+            color: #FF0099;
+            letter-spacing: 3px;
+        }
 
     .prev_button{
         position: absolute;
@@ -45,7 +55,7 @@ export const Style = styled.div`
             display: block;
             width: 100%;
             height: 400px;
-            outline: 5px solid  #FF0099;
+            outline: 5px solid #FFFFFF50;
             position: absolute;
             top: 0;
             left: 0;

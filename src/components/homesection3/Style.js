@@ -22,20 +22,23 @@ export const Style = styled.div`
             .full1{
                 width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 400px;
                 background: url('assets/pictures/Optimized-catalogue1.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
                 background-size: cover;
                 margin: auto;
                 border-radius: 8px;
-                margin-top: 2em;
+
+                @media only screen and (max-width: 1124px){
+                    margin-bottom: 10px;
+                }
             }
 
             .with_text{
                 width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 400px;
                 margin: auto;
                 border-radius: 8px;
 
@@ -54,8 +57,12 @@ export const Style = styled.div`
                     width: 100%;
                     font-size: 0.9em;
                     box-sizing: border-box;
-                    margin-top: 20px;
                     text-align: center;
+                    margin: auto;
+
+                        p{
+                            margin-bottom: 0px;
+                        }
 
                         button{
                             color: #FF0099;
@@ -64,15 +71,17 @@ export const Style = styled.div`
                             border: none;
                             padding: 5px 10px 5px 10px;
                             border-radius: 3px;
-                            margin-top: 13px;
                         }
+                    }
+                    @media only screen and (max-width: 1124px){
+                        margin-bottom: 10px;
                     }
                 }
 
                 .full2{
                 width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 400px;
                 background: url('assets/pictures/Optimized-catalogue9.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
@@ -86,14 +95,12 @@ export const Style = styled.div`
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-top: 2em;
-            margin-bottom: 2em;
 
 
             .halves1{
                 width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 400px;
                 margin: auto;
                 display: flex;
                 justify-content: space-around;
@@ -126,9 +133,8 @@ export const Style = styled.div`
             }
 
             .full_last_section{
-                width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 380px;
                 background: url('assets/pictures/Optimized-catalogue6.jpg');
                 background-repeat: no-repeat;
                 background-position: 50% 25%;
@@ -140,7 +146,7 @@ export const Style = styled.div`
             .halves2{
                 width: 25%;
                 min-width: 300px;
-                height: 80vh;
+                height: 400px;
                 margin: auto;
                 display: flex;
                 justify-content: space-around;
