@@ -20,7 +20,6 @@ export const Style = styled.div`
     button{
         height: 35px;
         min-width: 130px;
-        color: #FF0099;
         font-size: 15px;
         font-weight: bold;
         background-color: white;
@@ -29,5 +28,10 @@ export const Style = styled.div`
         margin: auto 5px;
         outline: none;
         cursor: pointer;
+
+        a{
+            color: #FF0099;
+            text-decoration: none;
+        }
     }
 `
