@@ -6,6 +6,10 @@ export const Style = styled.div`
 export const StyleContact = styled.div`
     margin: auto;
     width: 500px;
+    
+    @media only screen and(max-width: 970px){
+        width: 100%;
+    }
 
     label{
         font-size: 13px;
@@ -33,7 +37,7 @@ export const StyleContact = styled.div`
     }
 
     .message_input{
-        width: 500px;
+        width: 100%;
         height: 200px;
         margin-bottom: 2em;
         margin-top: 5px;
