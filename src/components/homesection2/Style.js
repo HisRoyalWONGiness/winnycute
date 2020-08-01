@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Style = styled.div`
     margin: auto;
+    margin-top: 6em;
     margin-bottom: 6em;
     position: relative;
     width: 100%;
@@ -11,7 +12,7 @@ export const Style = styled.div`
     h1{
             position: absolute;
             margin-left: 1em;
-            top: -45px;
+            top: -65px;
             margin-bottom: 1em;
             margin-top: 0;
             color: #FF0099;
