@@ -7,8 +7,8 @@ export const StyleContact = styled.div`
     margin: auto;
     width: 500px;
     
-    @media only screen and(max-width: 970px){
-        width: 100%;
+    @media(max-width: 670px){
+        width: 90%;
     }
 
     label{
