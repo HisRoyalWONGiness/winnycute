@@ -45,13 +45,21 @@ export const StyleContact = styled.div`
         }
     }
 
-        .text_input:-webkit-autofill,
-        .text_input:-webkit-autofill:hover,
-        .text_input:-webkit-autofill:focus,
-        .text_input:-webkit-autofill:active{
-            transition: background-color 5000s;
-            -webkit-text-fill-color: #fff !important;
-        }
+    .text_input:-webkit-autofill,
+    .text_input:-webkit-autofill:hover,
+    .text_input:-webkit-autofill:focus,
+    .text_input:-webkit-autofill:active{
+        transition: background-color 5000s;
+        -webkit-text-fill-color: #fff !important;
+    }
+
+    .text_input[type=text]{
+        width: 100%;
+        padding: 12px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
 
     .message_input{
         width: 100%;
