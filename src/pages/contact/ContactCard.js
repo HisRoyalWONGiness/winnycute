@@ -75,10 +75,14 @@ function ContactCard (){
                    {props =>(
                        <Form>
                            <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' />
+                           <div className = 'space'></div>
                            <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' />
+                           <div className = 'space'></div>
                            <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' />
+                           <div className = 'space'></div>
                            <MessageInput label = 'Message' name = 'message' type = 'text' />
-                   <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
+                           <div className = 'space'></div>
+                            <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
                        </Form>
                    )}
                 </Formik>
