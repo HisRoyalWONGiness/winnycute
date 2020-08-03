@@ -18,10 +18,14 @@ function Contact (){
                     <Image />
                     <ContactCard />
                 </div>
-                <h1>You can also reach us Via...</h1>
-                <p><h5>Address: No. 1 Umuocheala Street, Abayi, Aba, Abia State</h5></p>
-                <p><h5>Phone: +2348068417976, +2348136743132</h5></p>
-                <p><h5>Social Media: Instagram Icon, Facebook Icon, WhatsApp Icon</h5></p>
+                <div className = 'alternative'>
+                    <h1>You can also reach us Via...</h1>
+                    <p>
+                        Address: No. 1 Umuocheala Street, Abayi, Aba, Abia State<br />
+                        Phone: +2348068417976, +2348136743132 <br />
+                        Social Media: Instagram Icon, Facebook Icon, WhatsApp Icon
+                    </p>
+                </div>
             </Style>
         </div>
     )

@@ -3,9 +3,21 @@ import styled from 'styled-components';
 
 
 export const Style = styled.div`
-     margin-bottom: 4em;
      margin-top: 8em;
-     box-sizing: border-box;
+
+        h1{
+            color: #FF0099;
+            margin-left: 1em;
+        }
+
+     .alternative{
+         p{
+             font-size: 14px;
+             line-height: 25px;
+             letter-spacing: 1px;
+             margin-left: 2em;
+         }
+     }
 
      .container{
          display: flex;
@@ -20,7 +32,6 @@ export const Style = styled.div`
         }
 
         @media only screen and (max-width: 720px){
-            justify-content: center;
             margin: auto;
         }
      }
@@ -35,7 +46,7 @@ export const StyleImage = styled.div`
 
     img{
         width: 600px;
-        margin-bottom: 6em;
+        margin-bottom: 3em;
 
         @media only screen and (max-width: 1410px){
             width: 500px;
@@ -43,12 +54,9 @@ export const StyleImage = styled.div`
 
         
         @media only screen and (max-width: 1210px){
-            width: 600px;
-            
-        }
-
-        @media only screen and (max-width: 720px){
             display: none;
+            width: 0;
+            
         }
 
     }
@@ -57,7 +65,6 @@ export const StyleImage = styled.div`
 
 export const StyleContact = styled.div`
     margin: auto;
-    margin-bottom: 10em;
     margin-right: 4em;
     width: 600px;
     position: relative;
@@ -137,7 +144,7 @@ export const StyleContact = styled.div`
         font-size: 15px;
     }
 
-    .text_input[type=number]{
+    .text_input[type=tel]{
         width: 100%;
         padding: 12px 10px;
         margin: 8px 0;

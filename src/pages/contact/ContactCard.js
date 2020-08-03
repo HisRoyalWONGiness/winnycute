@@ -56,13 +56,13 @@ function ContactCard (){
                             .required('Name is Required'),
                         email: Yup.string()
                             .email('Invalid Email Address')
-                            .required('We need to get back to You, Email is Required'),
+                            .required('Email is Required'),
                         phone: Yup.string()
                             .min(5, 'This number looks Invalid')
                             .max(20, 'This number looks Invalid'),
                         message: Yup.string()
-                            .min(5, 'Pass a real message, length too short')
-                            .required('You need to Leave a message'),
+                            .min(5, 'Too short')
+                            .required('Message is Required'),
                     })}
 
                     onSubmit = {(values, {setSubmitting, resetForm}) =>{
@@ -75,13 +75,13 @@ function ContactCard (){
                     >
                     {props =>(
                         <Form>
-                            <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' error = 'error_name' />
+                            <CustomInput label = 'Name*' name = 'name' type = 'text' placeholder = 'Justice' error = 'error_name' />
                             <div className = 'space'></div>
-                            <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' error = 'error_email' />
+                            <CustomInput label = 'Your E-mail Address*' name = 'email' type = 'text' placeholder = 'username@example.com' error = 'error_email' />
                             <div className = 'space'></div>
-                            <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' placeholder = '+2348012345678' error = 'error_phone' />
+                            <CustomInput label = 'Your Phone Number' name = 'phone' type = 'tel' placeholder = '+2348012345678' error = 'error_phone' />
                             <div className = 'space'></div>
-                            <MessageInput label = 'Message' name = 'message' type = 'text' error = 'error_message' />
+                            <MessageInput label = 'Message*' name = 'message' type = 'text' error = 'error_message' />
                             <div className = 'space'></div>
                                 <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
                         </Form>
