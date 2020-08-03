@@ -18,11 +18,20 @@ export const Style = styled.div`
          @media only screen and (max-width: 1210px){
             justify-content: center;
         }
+
+        @media only screen and (max-width: 720px){
+            justify-content: center;
+            margin: auto;
+        }
      }
 `
 
 export const StyleImage = styled.div`
     margin: auto;
+
+    @media only screen and (max-width: 720px){
+        margin: 0;
+    }
 
     img{
         width: 600px;
@@ -39,16 +48,9 @@ export const StyleImage = styled.div`
         }
 
         @media only screen and (max-width: 720px){
-            width: 450px;
+            display: none;
         }
 
-        @media only screen and (max-width: 600px){
-            width: 350px;
-        }
-
-        @media only screen and (max-width: 400px){
-            width: 270px;
-        }
     }
 `
 
@@ -72,6 +74,7 @@ export const StyleContact = styled.div`
 
     @media only screen and (max-width: 720px){
             width: 450px;
+            margin-right: 0;
         }
 
         @media only screen and (max-width: 600px){
