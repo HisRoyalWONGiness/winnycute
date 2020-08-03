@@ -9,11 +9,15 @@ export const Style = styled.div`
 
      .container{
          display: flex;
-         justify-content: center;
+         justify-content: space-between;
          justify-items: center;
          flex-wrap: wrap;
          box-sizing: border-box;
          margin: 4em;
+
+         @media only screen and (max-width: 1210px){
+            justify-content: center;
+        }
      }
 `
 
@@ -21,8 +25,18 @@ export const StyleImage = styled.div`
     margin: auto;
 
     img{
-        width: 500px;
+        width: 600px;
         margin-bottom: 6em;
+
+        @media only screen and (max-width: 1410px){
+            width: 500px;
+        }
+
+        
+        @media only screen and (max-width: 1210px){
+            width: 600px;
+            
+        }
     }
 `
 
@@ -30,8 +44,20 @@ export const StyleImage = styled.div`
 export const StyleContact = styled.div`
     margin: auto;
     margin-bottom: 10em;
+    margin-right: 4em;
     width: 600px;
     position: relative;
+
+    @media only screen and (max-width: 1410px){
+        width: 500px;
+    }
+
+    
+    @media only screen and (max-width: 1200px){
+        width: 600px;
+        margin-right: 0;
+        
+    }
 
     label{
         font-size: 13px;
@@ -43,7 +69,6 @@ export const StyleContact = styled.div`
     }
 
     .text_input{
-        position: relative;
         width: 100%;
         height: 30px;
         box-sizing: border-box;

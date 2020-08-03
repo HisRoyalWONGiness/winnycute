@@ -40,52 +40,54 @@ function ContactCard (){
     return(
         <div>
             <StyleContact>
-                <Formik 
-                initialValues={{
-                     name: '',
-                     email: '',
-                     phone: '',
-                     message: '',   
+                <div className = 'contact_container'>
+                    <Formik 
+                    initialValues={{
+                        name: '',
+                        email: '',
+                        phone: '',
+                        message: '',   
+                        }}
+
+                    validationSchema = {Yup.object({
+                        name: Yup.string()
+                            .min(3, 'Name must be at least 3 Characters')
+                            .max(25, 'Name must not Exceed 25 Characters')
+                            .required('Name is Required'),
+                        email: Yup.string()
+                            .email('Invalid Email Address')
+                            .required('We need to get back to You, Email is Required'),
+                        phone: Yup.string()
+                            .min(5, 'This number looks Invalid')
+                            .max(20, 'This number looks Invalid'),
+                        message: Yup.string()
+                            .min(5, 'Pass a real message, length too short')
+                            .required('You need to Leave a message'),
+                    })}
+
+                    onSubmit = {(values, {setSubmitting, resetForm}) =>{
+                        setTimeout(() =>{
+                            alert(JSON.stringify(values, null, 2));
+                            resetForm();
+                            setSubmitting(false);
+                        }, 3000)
                     }}
-
-                validationSchema = {Yup.object({
-                    name: Yup.string()
-                        .min(3, 'Name must be at least 3 Characters')
-                        .max(25, 'Name must not Exceed 25 Characters')
-                        .required('Name is Required'),
-                    email: Yup.string()
-                        .email('Invalid Email Address')
-                        .required('We need to get back to You, Email is Required'),
-                    phone: Yup.string()
-                        .min(5, 'This number looks Invalid')
-                        .max(20, 'This number looks Invalid'),
-                    message: Yup.string()
-                        .min(5, 'Pass a real message, length too short')
-                        .required('You need to Leave a message'),
-                })}
-
-                onSubmit = {(values, {setSubmitting, resetForm}) =>{
-                    setTimeout(() =>{
-                        alert(JSON.stringify(values, null, 2));
-                        resetForm();
-                        setSubmitting(false);
-                    }, 3000)
-                }}
-                >
-                   {props =>(
-                       <Form>
-                           <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' error = 'error_name' />
-                           <div className = 'space'></div>
-                           <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' error = 'error_email' />
-                           <div className = 'space'></div>
-                           <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' placeholder = '+2348012345678' error = 'error_phone' />
-                           <div className = 'space'></div>
-                           <MessageInput label = 'Message' name = 'message' type = 'text' error = 'error_message' />
-                           <div className = 'space'></div>
-                            <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
-                       </Form>
-                   )}
+                    >
+                    {props =>(
+                        <Form>
+                            <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' error = 'error_name' />
+                            <div className = 'space'></div>
+                            <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' error = 'error_email' />
+                            <div className = 'space'></div>
+                            <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' placeholder = '+2348012345678' error = 'error_phone' />
+                            <div className = 'space'></div>
+                            <MessageInput label = 'Message' name = 'message' type = 'text' error = 'error_message' />
+                            <div className = 'space'></div>
+                                <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
+                        </Form>
+                    )}
                 </Formik>
+                </div>
             </StyleContact>
         </div>
     )
