@@ -37,6 +37,18 @@ export const StyleImage = styled.div`
             width: 600px;
             
         }
+
+        @media only screen and (max-width: 720px){
+            width: 450px;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 350px;
+        }
+
+        @media only screen and (max-width: 400px){
+            width: 270px;
+        }
     }
 `
 
@@ -53,11 +65,22 @@ export const StyleContact = styled.div`
     }
 
     
-    @media only screen and (max-width: 1200px){
+    @media only screen and (max-width: 1210px){
         width: 600px;
         margin-right: 0;
-        
     }
+
+    @media only screen and (max-width: 720px){
+            width: 450px;
+        }
+
+        @media only screen and (max-width: 600px){
+            width: 350px;
+        }
+
+        @media only screen and (max-width: 400px){
+            width: 270px;
+        }
 
     label{
         font-size: 13px;
