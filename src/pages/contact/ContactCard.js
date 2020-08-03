@@ -11,7 +11,7 @@ const CustomInput = ({label, ...props}) => {
             <label htmlFor = {props.id || props.name}>{label}</label>
             <input className = 'text_input' {...field} {...props}></input>
             {meta.touched && meta.error ?(
-                <div className = 'error'>
+                <div className = {props.error}>
                     {meta.error}
                 </div>
             ) : null}
@@ -28,7 +28,7 @@ const MessageInput = ({label, ...props}) => {
             <label htmlFor = {props.id || props.name}>{label}</label>
             <textarea className = 'message_input' {...field} {...props}></textarea>
             {meta.touched && meta.error ?(
-                <div className = 'error'>
+                <div className = {props.error}>
                     {meta.error}
                 </div>
             ) : null}
@@ -56,7 +56,7 @@ function ContactCard (){
                     email: Yup.string()
                         .email('Invalid Email Address')
                         .required('We need to get back to You, Email is Required'),
-                    phone: Yup.number()
+                    phone: Yup.string()
                         .min(5, 'This number looks Invalid')
                         .max(20, 'This number looks Invalid'),
                     message: Yup.string()
@@ -74,13 +74,13 @@ function ContactCard (){
                 >
                    {props =>(
                        <Form>
-                           <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' />
+                           <CustomInput label = 'Name' name = 'name' type = 'text' placeholder = 'Justice' error = 'error_name' />
                            <div className = 'space'></div>
-                           <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' />
+                           <CustomInput label = 'Your E-mail Address' name = 'email' type = 'text' placeholder = 'username@example.com' error = 'error_email' />
                            <div className = 'space'></div>
-                           <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' />
+                           <CustomInput label = 'Your Phone Number' name = 'phone' type = 'number' placeholder = '+2348012345678' error = 'error_phone' />
                            <div className = 'space'></div>
-                           <MessageInput label = 'Message' name = 'message' type = 'text' />
+                           <MessageInput label = 'Message' name = 'message' type = 'text' error = 'error_message' />
                            <div className = 'space'></div>
                             <button type = 'submit'>{props.isSubmitting ? 'Submitting...' : 'Submit'}</button>
                        </Form>

@@ -1,16 +1,37 @@
 import styled from 'styled-components';
 
+
+
 export const Style = styled.div`
      margin-bottom: 4em;
+     margin-top: 8em;
+     box-sizing: border-box;
+
+     .container{
+         display: flex;
+         justify-content: center;
+         justify-items: center;
+         flex-wrap: wrap;
+         box-sizing: border-box;
+         margin: 4em;
+     }
 `
+
+export const StyleImage = styled.div`
+    margin: auto;
+
+    img{
+        width: 500px;
+        margin-bottom: 6em;
+    }
+`
+
+
 export const StyleContact = styled.div`
     margin: auto;
-    width: 500px;
+    margin-bottom: 10em;
+    width: 600px;
     position: relative;
-    
-    @media(max-width: 670px){
-        width: 90%;
-    }
 
     label{
         font-size: 13px;
@@ -26,22 +47,26 @@ export const StyleContact = styled.div`
         width: 100%;
         height: 30px;
         box-sizing: border-box;
-        margin-top: 5px;
+        margin-top: 10px;
+        padding-top: 10px;
         margin-bottom: 7px;
         background: transparent;
         box-shadow: 0 0 1pt 1pt #FFFFFF90;
         border-radius: 4px;
         color: white;
         border: none;
+        transition: 0.4s;
         
         :focus{
             box-shadow: 0 0 1pt 1pt #FF0099;
             outline: none;
             background: transparent;
+            transition: 0.4s;
         }
 
         :hover{
             box-shadow: 0 0 1pt 1pt #FF0099;
+            transition: 0.4s;
         }
     }
 
@@ -61,11 +86,19 @@ export const StyleContact = styled.div`
         font-size: 15px;
     }
 
+    .text_input[type=number]{
+        width: 100%;
+        padding: 12px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
     .message_input{
         width: 100%;
         height: 200px;
         box-sizing: border-box;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-bottom: 5px;
         background: transparent;
         border-radius: 4px;
@@ -77,22 +110,71 @@ export const StyleContact = styled.div`
             box-shadow: 0 0 1pt 1pt #FF0099;
             outline: none;
             background: transparent;
+            transition: 0.4s;
         }
 
         :hover{
             box-shadow: 0 0 1pt 1pt #FF0099;
+            transition: 0.4s;
         }
+    }
+
+    .message_input[type=text]{
+        width: 100%;
+        padding: 12px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 15px;
     }
 
     button{
         float: right;
-        margin-bottom: 30em;
+        height: 35px;
+        width: 180px;
+        min-width: 130px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: #FF0099;
+        border: none;
+        border-radius: 2px;
+        margin: auto 5px;
+        outline: none;
+        cursor: pointer;
     }
 
-    .error{
+    .error_name{
+        position: absolute;
         color: #FF0099;
         margin-top: 0;
         padding-top: 0;
-        font-size: 11px;
+        font-size: 10px;
     }
+
+    .error_email{
+        position: absolute;
+        color: #FF0099;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    .error_phone{
+        position: absolute;
+        color: #FF0099;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    .error_message{
+        position: absolute;
+        color: #FF0099;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+    
 `
+
