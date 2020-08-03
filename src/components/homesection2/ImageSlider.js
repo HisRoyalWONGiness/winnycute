@@ -9,7 +9,7 @@ class ImageSlider extends React.Component{
         this.state = {
             properties: data.properties,
             property: data.properties[0],
-            position: 2,
+            position: 0,
         }
     }
 
