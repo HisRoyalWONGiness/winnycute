@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from '../../components/modules/hero/Hero';
 import { Style } from './Style';
 import ContactCard from './ContactCard';
-import Image from './Image';
 
 function Contact (){
     return(
@@ -15,7 +14,7 @@ function Contact (){
             <Style>
                 <h1>Contact Us</h1>
                 <div className = 'container'>
-                    <Image />
+                    <img src = 'assets/illustrations/contact.svg' alt = 'illustration' />
                     <ContactCard />
                 </div>
                 <div className = 'alternative'>
