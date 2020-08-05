@@ -1,9 +1,25 @@
 import styled from 'styled-components';
 
 
-
 export const Style = styled.div`
-     margin-top: 8em;
+    margin-top: 8em;
+
+        img{
+        width: 600px;
+        margin-bottom: 3em;
+
+        @media only screen and (max-width: 1410px){
+            width: 500px;
+        }
+
+        
+        @media only screen and (max-width: 1210px){
+            display: none;
+            width: 0;
+            
+        }
+
+    }
 
         h1{
             color: #FF0099;
@@ -15,7 +31,7 @@ export const Style = styled.div`
              font-size: 14px;
              line-height: 25px;
              letter-spacing: 1px;
-             margin-left: 2em;
+             margin-left: 2.5em;
          }
      }
 
@@ -35,31 +51,6 @@ export const Style = styled.div`
             margin: auto;
         }
      }
-`
-
-export const StyleImage = styled.div`
-    margin: auto;
-
-    @media only screen and (max-width: 720px){
-        margin: 0;
-    }
-
-    img{
-        width: 600px;
-        margin-bottom: 3em;
-
-        @media only screen and (max-width: 1410px){
-            width: 500px;
-        }
-
-        
-        @media only screen and (max-width: 1210px){
-            display: none;
-            width: 0;
-            
-        }
-
-    }
 `
 
 
