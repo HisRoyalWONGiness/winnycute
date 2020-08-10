@@ -32,6 +32,11 @@ export const Style = styled.div`
              line-height: 25px;
              letter-spacing: 1px;
              margin-left: 2.5em;
+             margin-right: 1em;
+
+             @media only screen and (max-width: 1000px){
+                margin-left: 2em;      
+            }
          }
      }
 

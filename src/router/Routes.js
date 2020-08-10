@@ -7,6 +7,7 @@ import Catalogue from '../pages/catalogue/Catalogue';
 import WhatWeOffer from '../pages/whatweoffer/WhatWeOffer';
 import TopWears from '../pages/topwears/TopWears';
 import ScrollToTop from './ScrollToTop';
+import NoMatch from './NoMatch';
 
 class ReactRouter extends React.Component {
     render (){
@@ -21,6 +22,7 @@ class ReactRouter extends React.Component {
                                 <Route exact path = '/catalogue' component = {Catalogue} />
                                 <Route exact path = '/whatweoffer' component = {WhatWeOffer} />
                                 <Route exact path = '/topwears' component = {TopWears} />
+                                <Route component={NoMatch} />   
                             </Switch>
                         </App>
                     </ScrollToTop>
