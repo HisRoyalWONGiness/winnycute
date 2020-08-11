@@ -53,7 +53,7 @@ class ImageSlider extends React.Component{
                     <div className = 'cards-slider-wrapper' style={{
                         'transform': `translateX(-${((this.state.position)*100)}%)`
                     }}>
-                        {properties.map(propertyItem => <Card key = {property._id}  property = {propertyItem} />)}
+                        {properties.map(propertyItem => <Card key = {property._id}  propertyProp = {propertyItem} />)}
                     </div>
                 </div>
             </Style>
