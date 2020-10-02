@@ -27,6 +27,7 @@ export const StyleCard = styled.div`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
 
         img{
             width: 100%;
@@ -34,7 +35,11 @@ export const StyleCard = styled.div`
             object-position: 50% 15%;
             object-fit: cover;
             margin-top: 0;
-            cursor: pointer;
+            background: #0D0D0D;
+
+            :hover{
+                opacity: 0.95;
+            }
         }
 
         h3{

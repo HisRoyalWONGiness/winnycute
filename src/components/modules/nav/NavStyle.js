@@ -21,13 +21,14 @@ export const NavStyle = styled.div `
         position: fixed;
         top: 0px;
         width: 100%;
-        height: 8vh;
+        height: 12vh;
         transition: 1s;
         z-index: 99;
 
         .logo{
             position: relative;
-            top: 1em;
+            display: flex;
+            align-items: center;
             left: 1em;
 
             img{
@@ -39,8 +40,7 @@ export const NavStyle = styled.div `
             position: relative;
             display: flex;
             justify-content: space-between;
-            right: 1em;
-            top: 1em;
+            align-items: center;
             margin-right: 2em;
 
             .single_item{
@@ -135,6 +135,9 @@ export const NavStyle = styled.div `
                 }
             }
         }
+        @media (max-width: 999px ){
+                height: 8vh;
+            }
     }
     
 `
@@ -179,7 +182,7 @@ export const ButtonStyle = styled.div `
     }
 
     @media (max-width: 999px){
-        display: block;
+        display: block;  
     }
 
 

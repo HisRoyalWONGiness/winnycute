@@ -23,7 +23,9 @@ class Catalogue extends React.Component{
                 <Style>
                     <h1>CATALOGUE PAGE</h1>
                     <div className = 'contain_cards'>
-                        {display.map(placeholderImages => <Card key = {display.id}  passProps = {placeholderImages} />)}
+                        {display.map(placeholderImages => <Card key = {display.id}  props = {placeholderImages}>
+                            
+                        </Card>)}
                     </div>
                 </Style>
             </div>
