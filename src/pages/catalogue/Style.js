@@ -3,13 +3,37 @@ import styled from 'styled-components';
 export const Style = styled.div`
     margin-bottom: 36em;
 
-    
-
     .contain_cards{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
+    }
+
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000000;
+        }
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        max-width: 1200px;
+        background-color: red;
     }
 `
 
