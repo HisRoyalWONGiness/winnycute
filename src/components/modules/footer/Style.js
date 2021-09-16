@@ -4,7 +4,7 @@ export const Style = styled.div`
     width: 100%;
     color: #0D0D0D;
     padding: 1em;
-    background-color: whitesmoke;
+    background-color: #FAF9F6;
     box-sizing: border-box;
 
 
