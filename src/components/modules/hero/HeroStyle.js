@@ -22,7 +22,7 @@ export const HeroStyle = styled.div`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: #FAF9F6;
         padding: 0em 1em;
 
         .form_style{
